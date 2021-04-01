@@ -33,6 +33,7 @@ call :cp-msys2-usr-bin expr.exe
 call :cp-msys2-usr-bin false.exe
 call :cp-msys2-usr-bin fdisk.exe
 call :cp-msys2-usr-bin file.exe
+call :cp-msys2-usr-bin find.exe
 call :cp-msys2-usr-bin flock.exe
 call :cp-msys2-usr-bin gawk.exe
 call :cp-msys2-usr-bin getopt.exe
@@ -112,6 +113,10 @@ call :cp-msys2-usr-bin yes.exe
 @rem call :cp-msys2-usr-bin zstd.exe
 @rem call :cp-msys2-usr-bin zstdcat.exe
 @rem call :cp-msys2-usr-bin zstdmt.exe
+
+@rem rename some binary in order to avoid existing command in Windows
+rename %currdir%\bin\find.exe lfind.exe
+
 goto exit
 
 :cp-msys2-usr-bin
