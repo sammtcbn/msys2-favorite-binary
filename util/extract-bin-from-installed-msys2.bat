@@ -7,6 +7,8 @@ if not exist %toppath%\bin (
     mkdir %toppath%\bin
 )
 
+del /f /q %toppath%\bin\*
+
 :main
 call :cp-msys2-usr-bin *.dll
 call :cp-msys2-usr-bin awk.exe
