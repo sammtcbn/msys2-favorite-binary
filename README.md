@@ -2,7 +2,7 @@ msys2-favorite-binary
 
 This repository hosts some of my favorite msys2 pre-built binaries.
 If you like Linux commands and you want to use Linux commands on Windows, you can install this repository.
-All Binaries in this reposity are currently extracted from msys2-x86_64-20210419.exe
+All Binaries in this reposity are currently extracted from msys2-x86_64-20210725.exe
 
 Install steps on Windows by git this repository:
 ```sh
