@@ -71,7 +71,8 @@ call :cp-msys2-usr-bin xzdec.exe
 @rem call :cp-msys2-usr-bin zstdmt.exe
 
 @rem rename some binary in order to avoid existing command in Windows
-rename %toppath%\bin\find.exe lfind.exe
+@rem rename %toppath%\bin\find.exe lfind.exe
+@rem note: find command is alread in Coreutils for Windows , so no need to copy here
 
 goto exit
 
